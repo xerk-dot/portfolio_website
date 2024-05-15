@@ -18,19 +18,20 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Welcome to my portfolio site!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      While you are here, feel free to explore my projects, and accomplishments. DevOps, GenAI. I am passionate about designing platforms which eliminate toil throughout the development process with highly optimized developer experiences and simplified operations. Enjoys leveraging cloud technologies to design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions. Driven by my personal text-to-video GenAI passion projects. currently I live in Sydney working as a senior product designer at{' '}
+      <Link href="https://www.qwilr.com">Qwilr</Link>. Background of full-stack and platform-engineering mindset. My projects include UX design, UI
+      animations, and icon illustration. If you’re interested in the tools and software I
+      use check out my <Link href="/uses">uses page</Link>. Check out my projects "like this portfolio".
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
+      In my free time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
       <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      about new projects, so feel free to connect with me.
+
+      Cheers!
     </Text>
   </Fragment>
 );

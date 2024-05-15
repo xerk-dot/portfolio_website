@@ -98,13 +98,18 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="handkerchief"
+        description="An open-source twitter clone on a spring framework with microservices architecture catered to video-hosting startups."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -163,11 +168,7 @@ export const Home = () => {
           ],
         }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+      
       <Footer />
     </div>
   );
