@@ -14,7 +14,6 @@ Henry Hecht
 Hand crafted design & web development
 
 Design tools:
-Figma
 Photoshop
 Blender
 

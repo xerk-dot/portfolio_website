@@ -2,13 +2,14 @@ import config from '~/config.json';
 
 export const navLinks = [
   {
+    label: 'About Me',
+    pathname: '/#details',
+  },
+  {
     label: 'Projects',
     pathname: '/#project-1',
   },
-  {
-    label: 'Details',
-    pathname: '/#details',
-  },
+
   {
     label: 'Articles',
     pathname: '/articles',
@@ -26,9 +27,9 @@ export const socialLinks = [
     icon: 'twitter',
   },
   {
-    label: 'Figma',
-    url: `https://www.figma.com/${config.figma}`,
-    icon: 'figma',
+    label: 'Linkedin',
+    url: `https://www.linkedin.com/in/${config.linkedin}`,
+    icon: 'linkedin',
   },
   {
     label: 'Github',

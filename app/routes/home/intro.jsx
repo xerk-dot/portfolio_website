@@ -13,9 +13,20 @@ import config from '~/config.json';
 import { useHydrated } from '~/hooks/useHydrated';
 import styles from './intro.module.css';
 
+
 const DisplacementSphere = lazy(() =>
   import('./displacement-sphere').then(module => ({ default: module.DisplacementSphere }))
 );
+
+
+function resize_to_fit() {
+  let fontSize = window.getComputedStyle(output).fontSize;
+  output.style.fontSize = (parseFloat(fontSize) - 1) + 'px';
+  
+  if(output.clientHeight >= outputContainer.clientHeight){
+    resize_to_fit();
+  }
+}
 
 export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
   const { theme } = useTheme();
@@ -35,7 +46,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
       const index = (disciplineIndex + 1) % disciplines.length;
       setDisciplineIndex(index);
     },
-    5000,
+    5000, //how fast the swipe is for the disciplines
     theme
   );
 
@@ -69,13 +80,16 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               </Suspense>
             )}
             <header className={styles.text}>
+              
               <h1 className={styles.name} data-visible={visible} id={titleId}>
                 <DecoderText text={config.name} delay={500} />
               </h1>
+              
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
                   {`${config.role} + ${introLabel}`}
                 </VisuallyHidden>
+
                 <span aria-hidden className={styles.row}>
                   <span
                     className={styles.word}
@@ -86,6 +100,9 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>
+
+
+                
                 <div className={styles.row}>
                   {disciplines.map(item => (
                     <Transition
@@ -101,9 +118,11 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                           className={styles.word}
                           data-plus={true}
                           data-status={status}
-                          style={cssProps({ delay: tokens.base.durationL })}
+                          style={{...cssProps({ delay: tokens.base.durationL }),'font-size': 100-(1.5*item.length)}}
                         >
                           {item}
+
+
                         </span>
                       )}
                     </Transition>
