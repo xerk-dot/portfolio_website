@@ -1,6 +1,6 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
-import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
-import profileImg from '~/assets/profile.jpg';
+import profileImgLarge from '~/assets/images/pics_of_me/profile-large.jpg';
+import profileImgPlaceholder from '~/assets/images/pics_of_me/profile-placeholder.jpg';
+import profileImg from '~/assets/images/pics_of_me/profile.jpg';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -18,13 +18,10 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Welcome to my portfolio site!" start={visible} delay={500} />
+      <DecoderText text="Welcome to my portfolio!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      While you are here, feel free to explore my projects, and accomplishments. DevOps, GenAI. I am passionate about designing platforms which eliminate toil throughout the development process with highly optimized developer experiences and simplified operations. Enjoys leveraging cloud technologies to design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions. Driven by my personal text-to-video GenAI passion projects. currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. Background of full-stack and platform-engineering mindset. My projects include UX design, UI
-      animations, and icon illustration. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>. Check out my projects "like this portfolio".
+       I'm thrilled to have you here. Feel free to wander around and explore my projects and interests. I am a full-stack leveraging cloud technologies to design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions. And go check out my text-to-video GenAI passion projects, I think they are cool! <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my free time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
@@ -75,7 +72,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  About me
+                  what i look like 
                 </div>
               </div>
               <div className={styles.image}>
@@ -87,7 +84,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   width={960}
                   height={1280}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                  alt="Me smiling in an overexposed selfie."
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
                   <use href={`${katakana}#katakana-profile`} />
