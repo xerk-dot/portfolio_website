@@ -1,7 +1,7 @@
 import profileImgLarge from '~/assets/images/pics_of_me/profile-large.jpg';
 import profileImgPlaceholder from '~/assets/images/pics_of_me/profile-placeholder.jpg';
 import profileImg from '~/assets/images/pics_of_me/profile.jpg';
-import { Button } from '~/components/button';
+//import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
 import { Heading } from '~/components/heading';
@@ -10,13 +10,25 @@ import { Link } from '~/components/link';
 import { Section } from '~/components/section';
 import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
-import { Fragment, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { media } from '~/utils/style';
 import katakana from './katakana.svg';
 import styles from './profile.module.css';
 
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import {  styleReset, Button, ScrollView, TextInput} from 'react95';
+import styled from 'styled-components';
+5
+// pick a theme of your choice
+import original from 'react95/dist/themes/original';
+
+
 const ProfileText = ({ visible, titleId }) => (
+  
   <Fragment>
+
+
+
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Welcome to my portfolio!" start={visible} delay={500} />
     </Heading>
@@ -53,15 +65,38 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content} ref={nodeRef}>
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
-              <Button
-                secondary
-                className={styles.button}
-                data-visible={visible}
-                href="/contact"
-                icon="send"
-              >
-                Send me a message
-              </Button>
+              <ThemeProvider theme={original}>
+
+              <div style={{ width: 400 }}>
+              <div style={{ display: 'flex' }}>
+                <TextInput
+                  placeholder='Your Email Address'
+                  fullWidth
+                />
+        
+                </div>
+                  <br />
+
+                  <TextInput 
+                    multiline rows={4} 
+                    defaultValue='Go on, write me a message!'
+                    fullWidth 
+                    placeholder="Glad you didn't send that default text haha"
+                  />
+                  <br />
+
+                </div>
+
+                <Button
+                  secondary
+                  className={styles.button}
+                  data-visible={visible}
+                  href="/contact"
+                  icon="send"
+                >
+                  Send me a message
+                </Button>
+              </ThemeProvider>
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
