@@ -17,6 +17,7 @@ import { Form, useActionData, useNavigation } from '@remix-run/react';
 import { json } from '@remix-run/cloudflare';
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 import styles from './contact.module.css';
+import emailjs from '@emailjs/browser';
 
 export const meta = () => {
   return baseMeta({
@@ -31,14 +32,13 @@ const MAX_MESSAGE_LENGTH = 4096;
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
 export async function action({ context, request }) {
-  const ses = new SESClient({
+/*   const ses = new SESClient({
     region: 'us-east-1',
     credentials: {
       accessKeyId: context.cloudflare.env.AWS_ACCESS_KEY_ID,
       secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
     },
-  });
-
+  }); */
   const formData = await request.formData();
   const isBot = String(formData.get('name'));
   const email = String(formData.get('email'));
@@ -70,7 +70,7 @@ export async function action({ context, request }) {
   }
 
   // Send email via Amazon SES
-  await ses.send(
+/*   await ses.send(
     new SendEmailCommand({
       Destination: {
         ToAddresses: [context.cloudflare.env.EMAIL],
@@ -88,7 +88,20 @@ export async function action({ context, request }) {
       Source: `Portfolio <${context.cloudflare.env.FROM_EMAIL}>`,
       ReplyToAddresses: [email],
     })
-  );
+  ); */
+
+  
+
+  emailjs.sendForm('service_wcwysvq','template_c49pcdq',
+  {"D":"D"}, {publicKey: 'HVgSdBBdPbMeQ7Eab'}
+      ).then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
 
   return json({ success: true });
 }
