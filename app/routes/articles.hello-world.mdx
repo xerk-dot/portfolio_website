@@ -61,7 +61,7 @@ With Create React App I was using a somewhat janky and unmaintained package to p
 
 For the most part, the migration was pretty straight-forward. The way I has structured the site with React Router lent itself well to conforming with Next.js's file-based routing, and I was already using postcss for styling. I did, however, encounter a couple of problems:
 
-### 1. Route transitions
+### 1. Animated Route transitions
 
 There was a bit of a conflict when it came to animated route transitions. Next.js will immediately yank out all of the styles for the previous page when navigating to a new one. This works great when you're not animating between pages because it cleans up any unused styles form hanging around. When you are animating the page transition though, all of a sudden the previous page becomes jarringly completely unstyled as it transitions out. This problem one of [the most commented and reacted to issues](https://github.com/vercel/next.js/issues/17464) on the Next.js repo, so hopefully there's a fix soon, but for now I've dropped in a [hack to fix things](https://github.com/vercel/next.js/issues/17464#issuecomment-796430107) from the issue's comments.
 
