@@ -9,11 +9,14 @@ export const navLinks = [
     label: 'Projects',
     pathname: '/#project-1',
   },
-
   {
     label: 'Articles',
-    pathname: '/articles',
+    pathname: '/articles/hello-world',
   }
+/*   {
+    label: 'Articles',
+    pathname: '/articles',
+  } */
 /*   ,
   {
     label: 'Contact',
