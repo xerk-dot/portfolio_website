@@ -47,10 +47,10 @@ const Carousel = lazy(() =>
 
 const Armor = lazy(() => import('./armor').then(module => ({ default: module.Armor })));
 
-const title = 'Volkihar Knight';
+const title = 'Text-to-Video GenAI';
 const description =
   'A lore-friendly armor mod for The Elder Scrolls V: Skyrim. Released on PC and Xbox One with over one million downloads across both platforms.';
-const roles = ['3D Modelling', 'Texturing', 'Graphic Design'];
+const roles = ['Stable Diffusion, Midjourney (ComfyUI)', 'Python, Jupyter Notebook', 'Adobe Creative Cloud'];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -100,18 +100,7 @@ export function VolkiharKnight() {
             />
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <Image
-              srcSet={`${volkiharBook} 490w, ${volkiharBookLarge} 960w`}
-              width={480}
-              height={300}
-              placeholder={volkiharBookPlaceholder}
-              alt="A book containing a sketch depicting the logo and armor"
-              sizes={`(max-width: ${media.mobile}px) 90vw, (max-width: ${media.tablet}px) 80vw, 70vw`}
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
+        {/** 
         <ProjectSection>
           <ProjectSectionColumns>
             <div className={styles.armor}>
@@ -137,27 +126,7 @@ export function VolkiharKnight() {
             </div>
           </ProjectSectionColumns>
         </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <div className={styles.logoContainer}>
-              <VolkiharLogo
-                role="img"
-                aria-label="The Volkihar Knight logo, a monogram using the letters 'V' and 'K"
-              />
-            </div>
-            <ProjectTextRow center noMargin>
-              <ProjectSectionHeading>Identity design</ProjectSectionHeading>
-              <ProjectSectionText>
-                The monogram uses custom designed typography to get the right balance of
-                weight and angularity. I combined this with Trajan for the text, which is
-                also used for Skyrim’s game title wordmark.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-        
-        Carosel
-
+        */}
         <ProjectSection>
           <ProjectSectionContent>
             <Suspense>
@@ -198,6 +167,7 @@ export function VolkiharKnight() {
             />
           }
         >
+          {/** 
           <ProjectSectionContent>
             <ProjectTextRow center centerMobile noMargin>
               <Image
@@ -226,6 +196,7 @@ export function VolkiharKnight() {
               </Button>
             </ProjectTextRow>
           </ProjectSectionContent>
+          */}
         </ProjectSection>
       </ProjectContainer>
       <Footer />

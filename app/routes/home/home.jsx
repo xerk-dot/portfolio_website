@@ -110,7 +110,7 @@ export const Home = () => {
         title="handkerchief"
         description="An open-source twitter clone on a spring framework with microservices architecture catered to video-hosting startups."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://github.com/xerk-dot/handkerchief" //"/projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
