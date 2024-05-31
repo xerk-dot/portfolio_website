@@ -1,6 +1,6 @@
-import volkiharBackgroundLarge from '~/assets/images/new_american_vineyard/v0002.mp4';
-import volkiharBackgroundPlaceholder from '~/assets/images/new_american_vineyard/0001.png';
-import volkiharBackground from '~/assets/images/new_american_vineyard/v0002.mp4';
+import volkiharBackgroundLarge from '~/assets/images/football/v0002.mp4';
+import volkiharBackgroundPlaceholder from '~/assets/images/football/v0001.mp4';
+import volkiharBackground from '~/assets/images/football/v0001.mp4';
 
 
 import volkiharBannerLarge from '~/assets/images/new_american_vineyard/0001.png';
@@ -49,9 +49,10 @@ const Carousel = lazy(() =>
 
 const Armor = lazy(() => import('./armor').then(module => ({ default: module.Armor })));
 
-const title = 'Text-to-Video GenAI';
+const title = 'text-to-video workflows';
 const description =
-  'Ooo, moving images!';
+  'are needed. the models aren\'t manufacturing your perfect gonzo-film. you need to refine your craft and consider exploring:\n\nPreprocessing: how are you preparing the input for the model?\n\nModel Selection and Control: Are you using different pipelines for specific models, or have you created a flexible pipeline that adapts to various models? How do you control model parameters like video length, style, or content detail within the pipeline?\n\nPostprocessing: What happens to the generated video after the model outputs it? How do you apply postproduction to refine the final product?\n\nBy examining these aspects of your pipeline configuration, we can gain valuable insights into how to tailor text-to-video models for specific needs and achieve the best possible results.';
+
 const roles = ['Stable Diffusion, Midjourney (ComfyUI)', 'Python, Jupyter Notebook', 'Adobe Creative Cloud'];
 
 export const meta = () => {
@@ -81,7 +82,7 @@ export function VolkiharKnight() {
           width={1280}
           height={720}
           placeholder={volkiharBackgroundPlaceholder}
-          opacity={0.5}
+          opacity={0.2}
         />
         <ProjectHeader
           title={title}
@@ -90,6 +91,8 @@ export function VolkiharKnight() {
         />
         {/*linkLabel="Get the mod"
       url="https://www.nexusmods.com/skyrimspecialedition/mods/4806/"*/}
+
+
 
 
         <ProjectSection>

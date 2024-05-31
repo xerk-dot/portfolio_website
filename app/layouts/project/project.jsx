@@ -30,7 +30,7 @@ export function ProjectHeader({
           <Heading className={styles.title} level={2} as="h1">
             {title}
           </Heading>
-          <Text className={styles.description} size="xl" as="p">
+          <Text  style={{whiteSpace: "pre-wrap"}} className={styles.description} size="xl" as="p">
             {description}
           </Text>
           {!!url && (
