@@ -69,33 +69,13 @@ export const Profile = ({ id, visible, sectionRef }) => {
 
               <div style={{ width: 400 }}>
               <div style={{ display: 'flex' }}>
-                <TextInput
-                  placeholder='Your Email Address'
-                  fullWidth
-                />
+
         
                 </div>
-                  <br />
 
-                  <TextInput 
-                    multiline rows={4} 
-                    defaultValue='Go on, write me a message!'
-                    fullWidth 
-                    placeholder="Glad you didn't send that default text haha"
-                  />
-                  <br />
 
                 </div>
 
-                <Button
-                  secondary
-                  className={styles.button}
-                  data-visible={visible}
-                  href="/contact"
-                  icon="send"
-                >
-                  Send me a message
-                </Button>
               </ThemeProvider>
             </div>
             <div className={styles.column}>
@@ -107,7 +87,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  what i look like 
+                  this is what i look like 
                 </div>
               </div>
               <div className={styles.image}>
