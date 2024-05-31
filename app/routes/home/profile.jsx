@@ -33,11 +33,10 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Welcome to my portfolio!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-       I'm thrilled to have you here. Feel free to wander around and explore my projects and interests. I am a full-stack leveraging cloud technologies to design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions. And go check out my text-to-video GenAI passion projects, I think they are cool! <Link href="/uses">uses page</Link>.
+       I'm thrilled to have you here. Feel free to wander around and explore my projects and interests. I am a full-stack leveraging cloud technologies to design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions. And go check out my text-to-video GenAI passion projects, I think they are cool!
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my free time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
+      In my free time I like to practice Brazilian Jiu Jitsu, play video games. I’m always down for hearing
       about new projects, so feel free to connect with me.
 
       Cheers!
