@@ -4,6 +4,8 @@ import gamestackTexture2 from '~/assets/gamestack-list.jpg';
 import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
+
+
 import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
@@ -129,10 +131,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="GenAI art + custom tools"
+        description="Text-to-video, Comfy UI nodes"
+        buttonText="Check it out"
+        buttonLink="https://xerk.artstation.com/"
         model={{
           type: 'phone',
           alt: 'App login screen',
