@@ -1,25 +1,27 @@
-import volkiharBackgroundLarge from '~/assets/volkihar-background-large.jpg';
-import volkiharBackgroundPlaceholder from '~/assets/volkihar-background-placeholder.jpg';
-import volkiharBackground from '~/assets/volkihar-background.jpg';
-import volkiharBannerLarge from '~/assets/volkihar-banner-large.jpg';
-import volkiharBannerPlaceholder from '~/assets/volkihar-banner-placeholder.jpg';
-import volkiharBanner from '~/assets/volkihar-banner.jpg';
-import volkiharBookLarge from '~/assets/volkihar-book-large.png';
-import volkiharBookPlaceholder from '~/assets/volkihar-book-placeholder.png';
-import volkiharBook from '~/assets/volkihar-book.png';
-import volkiharEnderalLarge from '~/assets/volkihar-enderal-large.jpg';
-import volkiharEnderalLogoLarge from '~/assets/volkihar-enderal-logo-large.png';
-import volkiharEnderalLogoPlaceholder from '~/assets/volkihar-enderal-logo-placeholder.png';
-import volkiharEnderalLogo from '~/assets/volkihar-enderal-logo.png';
-import volkiharEnderalPlaceholder from '~/assets/volkihar-enderal-placeholder.jpg';
-import volkiharEnderal from '~/assets/volkihar-enderal.jpg';
-import volkiharSlide1Large from '~/assets/volkihar-slide-1-large.jpg';
-import volkiharSlide1 from '~/assets/volkihar-slide-1.jpg';
-import volkiharSlide2Large from '~/assets/volkihar-slide-2-large.jpg';
-import volkiharSlide2 from '~/assets/volkihar-slide-2.jpg';
-import volkiharSlide3Large from '~/assets/volkihar-slide-3-large.jpg';
-import volkiharSlide3 from '~/assets/volkihar-slide-3.jpg';
-import volkiharSlidePlaceholder from '~/assets/volkihar-slide-placeholder.jpg';
+import volkiharBackgroundLarge from '~/assets/images/new_american_vineyard/v0002.mp4';
+import volkiharBackgroundPlaceholder from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharBackground from '~/assets/images/new_american_vineyard/v0002.mp4';
+
+
+import volkiharBannerLarge from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharBannerPlaceholder from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharBanner from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharBookLarge from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharBookPlaceholder from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharBook from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharEnderalLarge from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharEnderalLogoLarge from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharEnderalLogoPlaceholder from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharEnderalLogo from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharEnderalPlaceholder from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharEnderal from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlide1Large from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlide1 from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlide2Large from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlide2 from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlide3Large from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlide3 from '~/assets/images/new_american_vineyard/0001.png';
+import volkiharSlidePlaceholder from '~/assets/images/new_american_vineyard/0001.png';
 import { Button } from '~/components/button';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
@@ -49,7 +51,7 @@ const Armor = lazy(() => import('./armor').then(module => ({ default: module.Arm
 
 const title = 'Text-to-Video GenAI';
 const description =
-  'A lore-friendly armor mod for The Elder Scrolls V: Skyrim. Released on PC and Xbox One with over one million downloads across both platforms.';
+  'Ooo, moving images!';
 const roles = ['Stable Diffusion, Midjourney (ComfyUI)', 'Python, Jupyter Notebook', 'Adobe Creative Cloud'];
 
 export const meta = () => {
@@ -84,10 +86,12 @@ export function VolkiharKnight() {
         <ProjectHeader
           title={title}
           description={description}
-          linkLabel="Get the mod"
-          url="https://www.nexusmods.com/skyrimspecialedition/mods/4806/"
           roles={roles}
         />
+        {/*linkLabel="Get the mod"
+      url="https://www.nexusmods.com/skyrimspecialedition/mods/4806/"*/}
+
+
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectImage
