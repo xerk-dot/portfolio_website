@@ -6,6 +6,6 @@ addons.setConfig({
     ...themes.dark,
     brandImage: './icon.svg',
     brandTitle: 'Henry Hecht Components',
-    brandUrl: 'https://hamishw.com',
+    brandUrl: 'https://henryhecht.me',
   },
 });
