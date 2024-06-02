@@ -43,29 +43,23 @@ const ProfileText = ({ visible, titleId }) => (
     Glad you found me. 
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Feel free to browse my projects and interests. I'm driven by the potential of technology to create a more open, decentralized, and user-centric world. I am especially passionate when building tools which respect and champion individual liberty and autonomy. 
+    Feel free to browse my projects and explore my interests. I'm driven by accelerating  technology to create a more open, decentralized, and user-centric world. I am especially passionate when building tools which champion and forward individual liberty and autonomy. 
 
 </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-Free markets and individual ingenuity are the engines of understanding. I thrive in collaborative environments where diverse ideas and approaches are valued. 
-I leverage open-source communities to tap into a global pool of talent and believe in fostering a culture of knowledge sharing and mutual learning.
+Technological change requires free markets and individual ingenuity as the engines of understanding. As a result, I am a strong advocate for open-source development methodologies. My best work is via voluntary contributions when I am incentivized with mutually-beneficial interactions.
+</Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+
+I place strong emphasis on personal responsibility. When individuals are ultimately accountable for the consequences of their choices, organizations foster a culture of self-reliance and sound decision-making. 
 
 </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-I'm a strong advocate for open-source development methodologies.
-
-The concept of voluntary exchange is critical to successful organizations, as mutually beneficial interactions between individuals form the strongest foundation. 
-
-I place strong emphasis on personal responsibility. Individuals are ultimately accountable for the consequences of their choices.
-This fosters a culture of self-reliance and encourages people to make sound decisions. It also ensures that individuals reap the rewards of their hard work and innovation, motivating them to contribute further.
-
-</Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-Social order is neither defined nor dictated by rigid processes; rather, behavior is regulated by normatives and temporary influence. So, reach out and let's rely on one another for support and honest feedback. If everything is let to be, each of us can specialize and develop our own standards and expectations. Fuck dogma.
+Social order is neither defined nor dictated by rigid processes; rather, behavior is regulated by normatives and influences. So, reach out and let's rely on one another for support and honest feedback. If everything is left to be, each of us can specialize and develop our own perceptions and expectations. Fuck dogma.
 
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    I'm particularly passionate about my <Link href="/projects/textToVideo">GenAI text-to-video projects, so check them out</Link>  --– I think you'll find them really cool!
+    P.S. --- I'm particularly passionate about my <Link href="/projects/textToVideo">GenAI text-to-video projects, so check them out</Link>  --– I think you'll find them really cool!
 
 
       Cheers!
