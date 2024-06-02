@@ -112,18 +112,22 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                       key={item}
                     >
                       {({ status, nodeRef }) => (
+                        <Heading level={2} as="h4" className={styles.title}>
+
                         <span
                           aria-hidden
                           ref={nodeRef}
                           className={styles.word}
                           data-plus={true}
                           data-status={status}
-                          style={{...cssProps({ delay: tokens.base.durationL }),'font-size': 100-(1.5*item.length)}}
+                          style={{...cssProps({ delay: tokens.base.durationL })}}
                         >
                           {item}
 
 
                         </span>
+                        </Heading>
+
                       )}
                     </Transition>
                   ))}
