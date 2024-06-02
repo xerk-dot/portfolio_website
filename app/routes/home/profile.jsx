@@ -33,11 +33,34 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Welcome to my portfolio!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Feel free to browse my projects and interests. As a full-stack developer, I leverage cloud technologies to craft secure, scalable, and adaptable solutions.  I'm particularly passionate about my <Link href="/projects/textToVideo">GenAI text-to-video projects, so check them out</Link>  – I think you'll find them really cool!
+
+    Glad you found me. 
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my free time I like to practice Brazilian Jiu Jitsu, play video games. I’m always down for hearing
-      about new projects, so feel free to connect with me.
+    Feel free to browse my projects and interests. I'm driven by the potential of technology to create a more open, decentralized, and user-centric world. I am especially passionate when building tools which respect and champion individual liberty and autonomy. 
+
+</Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+Free markets and individual ingenuity are the engines of understanding. I thrive in collaborative environments where diverse ideas and approaches are valued. 
+I leverage open-source communities to tap into a global pool of talent and believe in fostering a culture of knowledge sharing and mutual learning.
+
+</Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+I'm a strong advocate for open-source development methodologies.
+
+The concept of voluntary exchange is critical to successful organizations, as mutually beneficial interactions between individuals form the strongest foundation. 
+
+I place strong emphasis on personal responsibility. Individuals are ultimately accountable for the consequences of their choices.
+This fosters a culture of self-reliance and encourages people to make sound decisions. It also ensures that individuals reap the rewards of their hard work and innovation, motivating them to contribute further.
+
+</Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+Social order is neither defined nor dictated by rigid processes; rather, behavior is regulated by normatives and temporary influence. So, reach out and let's rely on one another for support and honest feedback. If everything is let to be, each of us can specialize and develop our own standards and expectations. Fuck dogma.
+
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+    I'm particularly passionate about my <Link href="/projects/textToVideo">GenAI text-to-video projects, so check them out</Link>  --– I think you'll find them really cool!
+
 
       Cheers!
     </Text>
