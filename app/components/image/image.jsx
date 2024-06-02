@@ -12,6 +12,7 @@ export const Image = ({
   className,
   style,
   reveal,
+  cyberpunkAccent,
   delay = 0,
   raised,
   src: baseSrc,
@@ -34,6 +35,7 @@ export const Image = ({
       className={classes(styles.image, className)}
       data-visible={inViewport || loaded}
       data-reveal={reveal}
+      data-cyberpunkAccent={cyberpunkAccent}
       data-raised={raised}
       data-theme={theme}
       style={cssProps({ delay: numToMs(delay) }, style)}
@@ -45,6 +47,7 @@ export const Image = ({
         loaded={loaded}
         inViewport={inViewport}
         reveal={reveal}
+        cyberpunkAccent={cyberpunkAccent}
         src={src}
         srcSet={srcSet}
         placeholder={placeholder}
@@ -66,6 +69,7 @@ const ImageElements = ({
   play = true,
   restartOnPause,
   reveal,
+  cyberpunkAccent,
   sizes,
   width,
   height,
@@ -145,6 +149,7 @@ const ImageElements = ({
     <div
       className={styles.elementWrapper}
       data-reveal={reveal}
+      cyberpunkAccent={cyberpunkAccent}
       data-visible={inViewport || loaded}
       style={cssProps({ delay: numToMs(delay + 1000) })}
     >

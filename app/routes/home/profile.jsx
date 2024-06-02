@@ -8,6 +8,9 @@ import nImg from 'app/assets/images/cyberpunk_ui/letters/n.png';
 import rImg from 'app/assets/images/cyberpunk_ui/letters/r.png';
 import yImg from 'app/assets/images/cyberpunk_ui/letters/y.png';
 
+import divider8Img from 'app/assets/images/cyberpunk_ui/dividers/divider8.png';
+import shape1Img from 'app/assets/images/cyberpunk_ui/shapes/shape1.png';
+
 //import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -65,6 +68,7 @@ Social order is neither defined nor dictated by rigid processes; rather, behavio
       Cheers!
     </Text>
   </Fragment>
+  
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
@@ -85,20 +89,24 @@ export const Profile = ({ id, visible, sectionRef }) => {
       <Transition in={visible || focused} timeout={0}>
         {({ visible, nodeRef }) => (
           <div className={styles.content} ref={nodeRef}>
+            
             <div className={styles.column}>
+              <div className={styles.name}>
+
+                <Image
+                      reveal
+                      cyberpunkAccent
+                      delay={100}
+                      srcSet={`${divider8Img} 480w, ${divider8Img} 960w`}
+                      width={100}
+                      height={100}
+                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                      alt="h"
+                  />
+                </div>
+
               <ProfileText visible={visible} titleId={titleId} />
-              <ThemeProvider theme={original}>
 
-              <div style={{ width: 400 }}>
-              <div style={{ display: 'flex' }}>
-
-        
-                </div>
-
-
-                </div>
-
-              </ThemeProvider>
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
@@ -123,9 +131,14 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me smiling in an overexposed selfie."
                 />
+
+                
+
+
                 <div className={styles.name}>
                   <Image
                       reveal
+                      cyberpunkAccent
                       delay={100}
                       srcSet={`${hImg} 480w, ${hImg} 960w`}
                       width={100}
@@ -135,6 +148,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                     />
                     <Image
                       reveal
+                      cyberpunkAccent
                       delay={100}
                       srcSet={`${eImg} 480w, ${eImg} 960w`}
                       width={100}
@@ -144,6 +158,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                     />
                     <Image
                       reveal
+                      cyberpunkAccent
                       delay={100}
                       srcSet={`${nImg} 480w, ${nImg} 960w`}
                       width={100}
@@ -153,6 +168,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                     />
                     <Image
                       reveal
+                      cyberpunkAccent
                       delay={100}
                       srcSet={`${rImg} 480w, ${rImg} 960w`}
                       width={100}
@@ -160,8 +176,9 @@ export const Profile = ({ id, visible, sectionRef }) => {
                       sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                       alt="r"
                     />
-                    <Image
+                    <Image 
                       reveal
+                      cyberpunkAccent
                       delay={100}
                       srcSet={`${yImg} 480w, ${yImg} 960w`}
                       width={100}
