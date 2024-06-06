@@ -13,11 +13,9 @@ import config from '~/config.json';
 import { useHydrated } from '~/hooks/useHydrated';
 import styles from './intro.module.css';
 
-
 const DisplacementSphere = lazy(() =>
   import('./displacement-sphere').then(module => ({ default: module.DisplacementSphere }))
 );
-
 
 function resize_to_fit() {
   let fontSize = window.getComputedStyle(output).fontSize;

@@ -42,10 +42,6 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Welcome to my portfolio!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-
-    Glad you found me. 
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
     Feel free to browse my projects and explore my interests. I'm driven by accelerating  technology to create a more open, decentralized, and user-centric world. I am especially passionate when building tools which champion and forward individual liberty and autonomy. 
 
 </Text>
