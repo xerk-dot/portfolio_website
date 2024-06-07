@@ -69,6 +69,16 @@
   transform: translate3d(0, 0, 0);
 }
 
+
+.cyberpunkBorder {
+  float: left;
+  
+  position: absolute;
+  /*border: 3px solid #73AD21;*/
+  transform: translate3d(-270px, 420px, 0px) rotate(90deg) scale(1.7);
+  
+}
+
 .title {
   white-space: nowrap;
   margin-bottom: var(--spaceL);

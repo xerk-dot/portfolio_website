@@ -39,30 +39,37 @@ const ProfileText = ({ visible, titleId }) => (
 
 
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Welcome to my portfolio!" start={visible} delay={500} />
+      <DecoderText text="welcome to my portfolio!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Feel free to browse my projects and explore my interests. I'm driven by accelerating  technology to create a more open, decentralized, and user-centric world. I am especially passionate when building tools which champion and forward individual liberty and autonomy. 
-
-</Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-Technological change requires free markets and individual ingenuity as the engines of understanding. As a result, I am a strong advocate for open-source development methodologies. My best work is via voluntary contributions when I am incentivized with mutually-beneficial interactions.
+    feel free to browse my projects and explore my interests. 
+    
+    
 </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
 
-I place strong emphasis on personal responsibility. When individuals are ultimately accountable for the consequences of their choices, organizations foster a culture of self-reliance and sound decision-making. 
+    i enjoy crafting user-centric solutions that champion individual liberty and can bring forth an open and decentralized world.
+
 
 </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-Social order is neither defined nor dictated by rigid processes; rather, behavior is regulated by normatives and influences. So, reach out and let's rely on one another for support and honest feedback. If everything is left to be, each of us can specialize and develop our own perceptions and expectations. Fuck dogma.
+
+     the free market is a powerful engine of understanding. in it, i grew desensitized to beliefs, to people and their bodies, to every offensive thing --- i became confident when i encompassed what i wanted, and became even more confident when i extended myself. 
+
+</Text>
+
+
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+fraternity is honesty. but it is not dictated by rigid processes; rather, its behavior is regulated by normatives and influences. so, reach out and let's rely on one another for support and honest feedback. if everything is left to be, each of us can specialize and develop our own perceptions and expectations. fuck dogma. 
 
     </Text>
+
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    P.S. --- I'm particularly passionate about my <Link href="/projects/textToVideo">GenAI text-to-video projects, so check them out</Link>  --– I think you'll find them really cool!
 
+ (p.s. check out my <Link href="/projects/textToVideo">gen-ai text-to-video projects</Link> cause i think you'll find them really cool!)
 
-      Cheers!
-    </Text>
+</Text>
+
   </Fragment>
   
 );
@@ -87,22 +94,23 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content} ref={nodeRef}>
             
             <div className={styles.column}>
-              <div className={styles.name}>
+
+
+              <ProfileText visible={visible} titleId={titleId} />
+
+              <div className={styles.cyberpunkBorder}>
 
                 <Image
                       reveal
                       cyberpunkAccent
                       delay={100}
                       srcSet={`${divider8Img} 480w, ${divider8Img} 960w`}
+                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                       width={100}
                       height={100}
-                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                      alt="h"
+                      alt="divider"
                   />
                 </div>
-
-              <ProfileText visible={visible} titleId={titleId} />
-
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
