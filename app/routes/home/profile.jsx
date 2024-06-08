@@ -10,6 +10,9 @@ import yImg from 'app/assets/images/cyberpunk_ui/letters/y.png';
 
 import divider8Img from 'app/assets/images/cyberpunk_ui/dividers/divider8.png';
 import shape1Img from 'app/assets/images/cyberpunk_ui/shapes/shape1.png';
+import square8Img from 'app/assets/images/cyberpunk_ui/squares/square8.png';
+import window2Img from 'app/assets/images/cyberpunk_ui/windows/window2.png';
+
 
 //import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
@@ -98,11 +101,10 @@ export const Profile = ({ id, visible, sectionRef }) => {
 
               <ProfileText visible={visible} titleId={titleId} />
 
-              <div className={styles.cyberpunkBorder}>
+{/*               <div className={styles.cyberpunkBorder}>
 
                 <Image
                       reveal
-                      cyberpunkAccent
                       delay={100}
                       srcSet={`${divider8Img} 480w, ${divider8Img} 960w`}
                       sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
@@ -110,7 +112,25 @@ export const Profile = ({ id, visible, sectionRef }) => {
                       height={100}
                       alt="divider"
                   />
-                </div>
+                  
+
+              </div> */}
+              <div className={styles.cyberpunkShape1}>
+                <Image
+                      cyberpunkAccent
+
+                      reveal
+                      delay={100}
+                      srcSet={`${shape1Img} 480w, ${shape1Img} 960w`}
+                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                      width={100}
+                      height={100}
+                      alt="shape1"
+                  />
+              </div>
+
+
+
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
@@ -136,8 +156,18 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   alt="Me smiling in an overexposed selfie."
                 />
 
-                
-
+                <div className={styles.window2Img}>
+                <Image
+                      cyberpunkAccent
+                      reveal
+                      delay={100}
+                      srcSet={`${window2Img} 480w, ${window2Img} 960w`}
+                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                      width={100}
+                      height={100}
+                      alt="window2"
+                />
+              </div>
 
                 <div className={styles.name}>
                   <Image
@@ -191,7 +221,21 @@ export const Profile = ({ id, visible, sectionRef }) => {
                       alt="y"
                     />
                 </div>
+                <div className={styles.profileBoxImg}>
+
+                <Image 
+                    reveal
+                    delay={100}
+                    srcSet={`${square8Img} 480w, ${square8Img} 960w`}
+                    width={100}
+                    height={100}
+                    sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                    alt="square8"
+                />
+                
+                </div>
               </div>
+              
 
             </div>
 

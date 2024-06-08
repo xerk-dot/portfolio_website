@@ -57,7 +57,7 @@ const Armor = lazy(() => import('./armor').then(module => ({ default: module.Arm
 
 const title = 'text-to-video workflows';
 const description =
-  'are needed. models alone wont manufacture your perfect gonzo-film. you need to refine your craft and consider exploring:\n\nPreprocessing: how are you preparing the input for the model?\n\nModel Selection and Control: Are you using different pipelines for specific models, or have you created a flexible pipeline that adapts to various models? How do you control model parameters like video length, style, or content detail within the pipeline?\n\nPostprocessing: What happens to the generated video after the model outputs it? How do you apply postproduction to refine the final product?\n\nBy examining these aspects of your pipeline configuration, we can gain valuable insights into how to tailor text-to-video models for specific needs and achieve the best possible results.';
+  'portfolio coming soon, i have a lot of media to format!';
 
 const roles = ['Stable Diffusion, Midjourney (ComfyUI)', 'Python, Jupyter Notebook', 'Adobe Creative Cloud'];
 

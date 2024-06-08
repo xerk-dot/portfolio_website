@@ -72,10 +72,24 @@
 
 .cyberpunkBorder {
   float: left;
-  
   position: absolute;
   /*border: 3px solid #73AD21;*/
   transform: translate3d(-270px, 420px, 0px) rotate(90deg) scale(1.7);
+}
+.cyberpunkShape1{
+  transform: translate3d(-30px, -800px, 0px) scale(.6);
+
+  opacity: .3;
+
+}
+.profileBoxImg{
+  transform: translate3d(-250px, -700px, 0px) scale(.25);
+  opacity: .8;
+
+}
+.window2Img{
+    transform: translate3d(-250px, -330px, 0px);
+  opacity: .4;
   
 }
 
