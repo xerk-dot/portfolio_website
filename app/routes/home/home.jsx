@@ -1,14 +1,14 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
+import gamestackTexture2Large from '~/assets/images/model_images/two_phones/textToVideo2-large.jpg';
+import gamestackTexture2Placeholder from '~/assets/images/model_images/two_phones/textToVideo2-placeholder.jpg';
+import gamestackTexture2 from '~/assets/images/model_images/two_phones/textToVideo2.jpg';
+import gamestackTextureLarge from '~/assets/images/model_images/two_phones/textToVideo1-large.jpg';
+import gamestackTexturePlaceholder from '~/assets/images/model_images/two_phones/textToVideo1-placeholder.jpg';
+import gamestackTexture from '~/assets/images/model_images/two_phones/textToVideo1.jpg';
 
 
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import sprTextureLarge from '~/assets/images/model_images/handkerchief-dark-large.jpg';
+import sprTexturePlaceholder from '~/assets/images/model_images/handkerchief-dark-placeholder.jpg';
+import sprTexture from '~/assets/images/model_images/handkerchief-dark.jpg';
 
 
 import { Footer } from '~/components/footer';
@@ -110,8 +110,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="handkerchief"
-        description="An open-source twitter clone on a spring framework with microservices architecture catered to video-hosting startups."
-        buttonText="View project"
+        description="an open-source twitter clone on a spring framework with microservices architecture catered to video-hosting startups."
+        buttonText="view project"
         buttonLink="https://github.com/xerk-dot/handkerchief" //"/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -130,10 +130,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="GenAI art + custom tools"
-        description="Text-to-video, Comfy UI nodes"
-        buttonText="Check it out"
-        buttonLink="https://xerk.artstation.com/"
+        title="genai art + custom tools"
+        description="text-to-video, comfy ui nodes"
+        buttonText="check it out"
+        buttonLink="projects/textToVideo"
         model={{
           type: 'phone',
           alt: 'App login screen',

@@ -24,10 +24,12 @@
 
 
 
-      filter: drop-shadow(0px 0px 10px rgba(100, 255, 255, 0.502));
+      filter: drop-shadow(0px 0px 40px rgba(100, 255, 255, 0.502));
 
       /*https://codepen.io/sosuke/pen/Pjoqqp */
     }
+
+
 
     &[data-reveal='true'] {
       --revealDuration: 1.8s;

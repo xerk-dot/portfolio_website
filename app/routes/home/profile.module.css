@@ -69,6 +69,12 @@
   transform: translate3d(0, 0, 0);
 }
 
+.rightSide {
+    /* border: 3px solid #73AD21; */
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .cyberpunkBorder {
   float: left;
@@ -76,20 +82,50 @@
   /*border: 3px solid #73AD21;*/
   transform: translate3d(-270px, 420px, 0px) rotate(90deg) scale(1.7);
 }
-.cyberpunkShape1{
-  transform: translate3d(-30px, -800px, 0px) scale(.6);
 
-  opacity: .3;
+.grid3Img{
+  transform: translate3d(-200px, -600px, 0px) scale(.6);
+  position: absolute;
+  opacity: 1;
+
 
 }
 .profileBoxImg{
-  transform: translate3d(-250px, -700px, 0px) scale(.25);
+  transform: translate3d(-200px, -200px, 0px) scale(.25);
   opacity: .8;
+  position: absolute;
 
 }
 .window2Img{
-    transform: translate3d(-250px, -330px, 0px);
+  position: absolute;
+  transform: translate3d(-250px, -630px, 0px);
   opacity: .4;
+  
+}
+.grid4Img{
+  transform: translate3d(-30px, -420px, 0px);
+  position: absolute;
+  opacity: .8;
+  color: var(--primary);
+  
+  
+}
+
+.data6Img{
+  transform: translate3d(100px, -10px, 0px) rotate(90deg);
+  position: absolute;
+  opacity: .3;
+
+
+  
+}
+
+.ruler6Img{
+  transform: translate3d(100px, 0px, 0px);
+  position: absolute;
+  opacity: 1;
+
+
   
 }
 
@@ -115,6 +151,7 @@
 }
 
 .tag {
+  
   margin-top: 220px;
   margin-bottom: 40px;
   display: grid;

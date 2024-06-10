@@ -105,14 +105,14 @@ export function VolkiharKnight() {
 
         <ProjectSection>
           <ProjectSectionContent>
-            <ProjectImage
+            {/* <ProjectImage
               srcSet={`${volkiharBanner} 800w, ${volkiharBannerLarge} 1100w`}
               width={800}
               height={436}
               placeholder={volkiharBannerPlaceholder}
               alt="A dark elf wearing the Volkihar Knight armor with the logo overlaid on the image."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
-            />
+            /> */}
           
           
             

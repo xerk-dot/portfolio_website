@@ -12,6 +12,11 @@ import divider8Img from 'app/assets/images/cyberpunk_ui/dividers/divider8.png';
 import shape1Img from 'app/assets/images/cyberpunk_ui/shapes/shape1.png';
 import square8Img from 'app/assets/images/cyberpunk_ui/squares/square8.png';
 import window2Img from 'app/assets/images/cyberpunk_ui/windows/window2.png';
+import grid4Img from 'app/assets/images/cyberpunk_ui/grids/grid4.png';
+import grid3Img from 'app/assets/images/cyberpunk_ui/grids/grid3.png';
+import ruler6Img from 'app/assets/images/cyberpunk_ui/rulers/ruler_6.png';
+
+import data6Img from 'app/assets/images/cyberpunk_ui/data/data6.png';
 
 
 //import { Button } from '~/components/button';
@@ -97,54 +102,36 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content} ref={nodeRef}>
             
             <div className={styles.column}>
+              <div className={styles.rightSide}>
 
 
-              <ProfileText visible={visible} titleId={titleId} />
+                <ProfileText visible={visible} titleId={titleId} />
 
-{/*               <div className={styles.cyberpunkBorder}>
 
-                <Image
-                      reveal
-                      delay={100}
-                      srcSet={`${divider8Img} 480w, ${divider8Img} 960w`}
-                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                      width={100}
-                      height={100}
-                      alt="divider"
-                  />
-                  
 
-              </div> */}
-              <div className={styles.cyberpunkShape1}>
-                <Image
-                      cyberpunkAccent
 
-                      reveal
-                      delay={100}
-                      srcSet={`${shape1Img} 480w, ${shape1Img} 960w`}
-                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                      width={100}
-                      height={100}
-                      alt="shape1"
-                  />
+
+
               </div>
-
-
 
             </div>
+
             <div className={styles.column}>
-              <div className={styles.tag} aria-hidden>
-                <Divider
-                  notchWidth="64px"
-                  notchHeight="8px"
-                  collapsed={!visible}
-                  collapseDelay={1000}
-                />
-                <div className={styles.tagText} data-visible={visible}>
-                  this is what i look like 
+
+              <div className={styles.rightSide}>
+                <div className={styles.tag} aria-hidden>
+                  <Divider
+                    notchWidth="64px"
+                    notchHeight="8px"
+                    collapsed={!visible}
+                    collapseDelay={1000}
+                  />
+                  <div className={styles.tagText} data-visible={visible}>
+                    this is what i look like 
+                  </div>
                 </div>
-              </div>
-              <div className={styles.image}>
+
+                <div className={styles.image}>
                 <Image
                   reveal
                   delay={100}
@@ -155,20 +142,9 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me smiling in an overexposed selfie."
                 />
+                
 
-                <div className={styles.window2Img}>
-                <Image
-                      cyberpunkAccent
-                      reveal
-                      delay={100}
-                      srcSet={`${window2Img} 480w, ${window2Img} 960w`}
-                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                      width={100}
-                      height={100}
-                      alt="window2"
-                />
-              </div>
-
+                
                 <div className={styles.name}>
                   <Image
                       reveal
@@ -221,25 +197,66 @@ export const Profile = ({ id, visible, sectionRef }) => {
                       alt="y"
                     />
                 </div>
+                 <div className={styles.grid4Img}>
+                  <Image
+                        cyberpunkAccent
+                        reveal
+                        delay={100}
+                        srcSet={`${grid4Img} 480w, ${grid4Img} 960w`}
+                        sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                        width={100}
+                        height={100}
+                        alt="grid4"
+                    />
+                </div> 
+ 
+                <div className={styles.grid3Img}>
+                  <Image
+                        cyberpunkAccent
+                        reveal
+                        delay={100}
+                        srcSet={`${grid3Img} 480w, ${grid3Img} 960w`}
+                        sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                        width={100}
+                        height={100}
+                        alt="grid3Img"
+                    />
+                </div>
+ 
+                <div className={styles.ruler6Img}>
+                  <Image
+                        cyberpunkAccent
+                        reveal
+                        delay={100}
+                        srcSet={`${ruler6Img} 480w, ${ruler6Img} 960w`}
+                        sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                        width={100}
+                        height={100}
+                        alt="ruler6Img"
+                    />
+                </div>
+
+              </div>
+
+
                 <div className={styles.profileBoxImg}>
 
-                <Image 
-                    reveal
-                    delay={100}
-                    srcSet={`${square8Img} 480w, ${square8Img} 960w`}
-                    width={100}
-                    height={100}
-                    sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                    alt="square8"
-                />
-                
-                </div>
+                  <Image 
+                      cyberpunkAccent
+                      reveal
+                      delay={100}
+                      srcSet={`${square8Img} 480w, ${square8Img} 960w`}
+                      width={100}
+                      height={100}
+                      sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                      alt="square8"
+                  />
+
+                </div> 
+
+
               </div>
-              
-
             </div>
-
-
           </div>
         )}
       </Transition>
