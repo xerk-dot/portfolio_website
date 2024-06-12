@@ -56,16 +56,15 @@ const ProfileText = ({ visible, titleId }) => (
 </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
 
-    i enjoy crafting user-centric solutions that champion individual liberty and can bring forth an open and decentralized world.
+    join me in crafting user-centric solutions that champion individual liberty and can bring forth an open and decentralized world.
 
 
 </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
 
-     the free market is a powerful engine of understanding. in it, i grew desensitized to beliefs, to people and their bodies, to every offensive thing --- i became confident when i encompassed what i wanted, and became even more confident when i extended myself. 
+     the free market is a powerful engine of understanding --- in it, i grew desensitized to beliefs, to people and their bodies, to every offensive thing --- i became confident when i encompassed what i wanted, and became even more confident when i extended myself. 
 
 </Text>
-
 
     <Text className={styles.description} data-visible={visible} size="l" as="p">
 fraternity is honesty. but it is not dictated by rigid processes; rather, its behavior is regulated by normatives and influences. so, reach out and let's rely on one another for support and honest feedback. if everything is left to be, each of us can specialize and develop our own perceptions and expectations. fuck dogma. 
@@ -102,17 +101,11 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content} ref={nodeRef}>
             
             <div className={styles.column}>
-              <div className={styles.rightSide}>
 
 
                 <ProfileText visible={visible} titleId={titleId} />
 
 
-
-
-
-
-              </div>
 
             </div>
 

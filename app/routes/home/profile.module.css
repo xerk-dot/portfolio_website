@@ -52,8 +52,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 40px;
   transform: translate3d(0, 0, 0);
+}
+
+.rightSide {
+  /* border: 3px solid #73AD21; */
+  position: absolute;
+  margin-bottom: 400px;
+
 }
 
 .name {
@@ -69,12 +75,7 @@
   transform: translate3d(0, 0, 0);
 }
 
-.rightSide {
-    /* border: 3px solid #73AD21; */
-  position: absolute;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 
 .cyberpunkBorder {
   float: left;
