@@ -71,12 +71,22 @@ There was a bit of a conflict when it came to animated route transitions. Next.j
 
 Somewhat related to the route transitions, I had to opt out of both Next.js's and the native browser's scroll restoration in order to prevent the browser immediately scrolling to the top when the page started transitioning out. Next.js also doesn't appear to handle shifting focus when linking to the id of an element within the page, so I added that in for accessibility.
 
-## Looking back, and forward
+## Criticism/Optimism towards Remix
 
-I look forward to continuing to use this site as a playground, and it'll be interesting to compare the next iteration to where it is today.
+I eventually migrated the site to Remix now that they've got good support for CSS modules meaning I didn't need to convert all of my styling. It was mostly a process of deleting all of the hacks mentioned above in this post, and things just work and feel more "web standard". I'm now using the [CSS view transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) to handle smoothly crossfading on route transitions, which is a feature baked into React Router (and as a result Remix). I don't need to do weird javascript hacks to try and set the correct theme (which still inevitably led to a flash of unthemed content) - I'm now storing the preferred theme in a session cookie which Remix makes really easy to do.
 
-## Update: Feb 2024
+Remix poses challenges if you have actions and loaders as the main interface for your application. When you create a route in Remix, it can have one loader for that route and one action. But you must colocate both, otherwise you will have to deal with a crazy dependency chain. So if you have a component that needs some data, and its not in the page route, you better hope that data exists wherever that component is mounted! Components without loaders in the same file will silently fail. And it only took the Remix community fighting tooth and nail to get the Remix team to add a 'typeof' to your loader data.   
 
-I recently migrated the site to Remix now that they've got good support for CSS modules meaning I didn't need to convert all of my styling. It was mostly a process of deleting all of the hacks mentioned above in this post, and things just work and feel more "web standard". I'm now using the [CSS view transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) to handle smoothly crossfading on route transitions, which is a feature baked into React Router (and as a result Remix). I don't need to do weird javascript hacks to try and set the correct theme (which still inevitably led to a flash of unthemed content) - I'm now storing the preferred theme in a session cookie which Remix makes really easy to do.
+If you have two actions, you need to define new endpoints or have a switch statement to determine what action to do. You define an action in Remix not based in a component but for the route. You hope the relation between component and route stays tightly knit. 
 
-Overall I'm really happy with Remix, would totally recommend it. I would like to eventually replace a lot of animations triggered by Javascript with the upcoming scroll driven animations CSS API, but browser support isn't there yet, so maybe some time later this year.
+Without a solution like TRPC or an abstraction to guarantee the 1-to-1 relationship, these non-deterministic behaviors in Remix are scary.
+
+
+But overall, Remix was a great choice for a portfolio site, and I'd would totally recommend it. Recently, [Mark Dalgleish](https://x.com/markdalgleish?lang=en) has joined the Remix team and I consider the framework to be in the best state it has ever been in. 
+
+## Future areas for this site's improvement
+
+I would like to eventually replace a lot of animations triggered by Javascript with the upcoming scroll driven animations CSS API, but browser support isn't there yet, so maybe some time later this year.
+
+
+
