@@ -126,7 +126,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
 
                 <div className={styles.image}>
                 <Image
-                  reveal
                   delay={100}
                   placeholder={profileImgPlaceholder}
                   srcSet={`${profileImg} 480w, ${profileImgLarge} 960w`}
@@ -193,7 +192,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                  <div className={styles.grid4Img}>
                   <Image
                         cyberpunkAccent
-                        reveal
                         delay={100}
                         srcSet={`${grid4Img} 480w, ${grid4Img} 960w`}
                         sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
@@ -206,7 +204,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 <div className={styles.grid3Img}>
                   <Image
                         cyberpunkAccent
-                        reveal
                         delay={100}
                         srcSet={`${grid3Img} 480w, ${grid3Img} 960w`}
                         sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
@@ -219,7 +216,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 <div className={styles.ruler6Img}>
                   <Image
                         cyberpunkAccent
-                        reveal
                         delay={100}
                         srcSet={`${ruler6Img} 480w, ${ruler6Img} 960w`}
                         sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
@@ -236,7 +232,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
 
                   <Image 
                       cyberpunkAccent
-                      reveal
                       delay={100}
                       srcSet={`${square8Img} 480w, ${square8Img} 960w`}
                       width={100}
