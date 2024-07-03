@@ -57,7 +57,7 @@ const Armor = lazy(() => import('./armor').then(module => ({ default: module.Arm
 
 const title = 'text-to-video workflows';
 const description =
-  'are the future cornerstones of a smooth-running gonzo-film operation. The future of video is like a well-oiled machine, guiding tasks and projects through a series of defined stages, ensuring nothing gets lost in the shuffle and work progresses efficiently. The first step is to understand the repetitive processes within your work. Map out the different stages involved and what needs to be accomplished at each point.';
+  'are a well-oiled machine in a darkened room, thrumming with anticipation. it is fine-tuned conduit of contextual terms, manifesting into a celebratory living video.  ';
 const roles = ['Stable Diffusion, Midjourney (ComfyUI)', 'Python, Jupyter Notebook', 'Adobe Creative Cloud'];
 
 export const meta = () => {
