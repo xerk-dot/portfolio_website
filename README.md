@@ -6,8 +6,8 @@
 
 
 
-[![Site preview]([/app/assets/images/readme/entry_page.PNG](https://github.com/xerk-dot/portfolio_website/assets/82680202/614d2090-6da5-48d0-8e35-6417b12f0e1f
-))](https://henryhecht.me)
+[![Site preview](https://github.com/xerk-dot/portfolio_website/assets/82680202/614d2090-6da5-48d0-8e35-6417b12f0e1f
+)](https://henryhecht.me)
 
 My design portfolio to showcase a few projects. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://henryhecht.me).
 
