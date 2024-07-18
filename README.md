@@ -41,5 +41,5 @@ npm run deploy
 <details>
   <summary>How do I change the color on the <code>DisplacementSphere</code> (blobby rotating thing in the background).</summary>
   
-  You'll need to edit the fragment shader. [Check out this issue for more details](https://github.com/HamishMW/portfolio/issues/19#issuecomment-870996615).
+  You'll need to edit the fragment shader.
 </details>
